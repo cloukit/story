@@ -5,9 +5,7 @@
 
 &nbsp;
 
-### Usage
-
-**https://cloukit.github.io/#/component/story**
+internal tool
 
 
 &nbsp;
