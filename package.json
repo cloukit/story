@@ -2,7 +2,7 @@
   "COMMENT": "THIS FILE WILL BE PARSED DURING BUILD. IT IS NOT THE ACTUAL PACKAGE FILE PUSHE TO NPMJS!",
   "name": "@cloukit/story",
   "moduleId": "story",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A component to showcase an Angular Component together with its source and template",
   "license": "MIT",
   "author": "codelcou.io",
@@ -28,7 +28,7 @@
     "@angular/common": ">=4.0.0",
     "@angular/core": ">=4.0.0",
     "@angular/platform-browser": ">=4.0.0",
-    "@angular/platform-browser-dynamic": "^>=4.0.0",
+    "@angular/platform-browser-dynamic": ">=4.0.0",
     "rxjs": ">=5.0.0",
     "zone.js": ">=0.8.0"
   }
