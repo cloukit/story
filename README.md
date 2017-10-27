@@ -1,2 +1,17 @@
+[![](https://cloukit.github.io/assets/images/cloukit-banner-github.svg?v3)](https://cloukit.github.io/)
+
 # story
-A component to showcase an Angular Component together with its source and template
+
+
+&nbsp;
+
+### Usage
+
+**https://cloukit.github.io/#/component/story**
+
+
+&nbsp;
+
+### License
+
+[MIT](https://github.com/cloukit/legal) © [Bernhard Grünewaldt](https://github.com/clouless)
