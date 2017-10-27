@@ -12,7 +12,7 @@ import { CloukitStoryPrismCssWrapperComponent } from './children/prism-css-wrapp
 
 @NgModule({
   imports: [ CommonModule ],
-  exports: [ CloukitStoryComponent, CloukitStoryService ],
+  exports: [ CloukitStoryComponent ],
   declarations: [ CloukitStoryComponent, CustomSafeHtmlPipe, CloukitStoryPrismCssWrapperComponent ],
   providers: [ CloukitStoryService ],
   entryComponents: [ ],
