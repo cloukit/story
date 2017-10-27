@@ -43,13 +43,13 @@ import 'prismjs/components/prism-typescript';
         <pre
           class="language-typescript"><code
           class="language-typescript"
-          [innerHtml]="_componentSource | safeHtml"></code></pre>
+          [innerHtml]="_componentSource | customSafeHtml"></code></pre>
       </div>
       <div class="code-box" *ngIf="_activeTab === 'template'">
         <pre
           class="language-html"><code
           class="language-html"
-          [innerHtml]="_componentTemplate | safeHtml"></code></pre>
+          [innerHtml]="_componentTemplate | customSafeHtml"></code></pre>
       </div>
     </cloukit-story-prism-css-wrapper>
     <div class="preview-box" *ngIf="_activeTab === 'preview'">

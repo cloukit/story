@@ -4,13 +4,13 @@
  * https://github.com/cloukit/legal
  */
 import { Pipe, PipeTransform } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
-@Pipe({name: 'safeHtml'})
-export class SafeHtmlPipe implements PipeTransform {
+@Pipe({ name: 'customSafeHtml' })
+export class CustomSafeHtmlPipe implements PipeTransform {
   constructor(private sanitizer: DomSanitizer) { }
 
-  transform(html) {
+  transform(html): SafeHtml {
     return this.sanitizer.bypassSecurityTrustHtml(html);
   }
 }
