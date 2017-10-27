@@ -18,8 +18,8 @@
     "test": "echo \"ok\""
   },
   "dependencies": {
-    "@types/prismjs": ">=1.6.2",
-    "prismjs": "=>1.6.0"
+    "@types/prismjs": "1.6.2",
+    "prismjs": "1.6.0"
   },
   "devDependencies": {
     "@cloukit/library-build-chain": "1.10.0"
