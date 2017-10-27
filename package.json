@@ -2,7 +2,7 @@
   "COMMENT": "THIS FILE WILL BE PARSED DURING BUILD. IT IS NOT THE ACTUAL PACKAGE FILE PUSHE TO NPMJS!",
   "name": "@cloukit/story",
   "moduleId": "story",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A component to showcase an Angular Component together with its source and template",
   "license": "MIT",
   "author": "codelcou.io",
