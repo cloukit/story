@@ -1,0 +1,4 @@
+{
+  "story-00.html": "<div>foo bar</div>\n",
+  "story-00.ts": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'story-00',\n  templateUrl: './story-00.html',\n  styles: [ ],\n})\nexport class Story00Component { }\n"
+}
