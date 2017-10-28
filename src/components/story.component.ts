@@ -61,8 +61,9 @@ import 'prismjs/components/prism-typescript';
   styles: [
     '.story-box { border: 3px solid #e6e6e6; }',
     '.story-box-header { background-color: #e6e6e6; display:flex; }',
-    '.story-box-header-title { color: #710ECC; padding:10px; font-weight: bold; font-size:1.2rem; margin-right:40px;}',
-    '.button { padding:10px; cursor: pointer; width: 75px; text-align: center; }',
+    '.story-box-header-title { flex-grow:3; color: #710ECC; padding:10px; font-weight: bold; font-size:1.2rem; margin-right:40px;}',
+    '.button { padding:10px; cursor: pointer; width: 75px; text-align: center; user-select: none; }',
+    '.button:hover { background-color: #d9d9d9; }',
     '.active { border-bottom:8px solid #710ECC; font-weight:bold;}',
     '.preview-box { padding:20px; }',
     '.code-box { background-color: #333; }',
