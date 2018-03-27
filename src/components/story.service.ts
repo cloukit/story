@@ -4,9 +4,13 @@
  * https://github.com/cloukit/legal
  */
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs/Subject';
+import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class CloukitStoryService {
+
+  private _isReady = new Subject<boolean>();
 
   /** Holds all registered sources */
   private _sources = new Map<string, string>();
@@ -17,5 +21,14 @@ export class CloukitStoryService {
 
   public getSource(filename: string) {
     return this._sources.get(filename);
+  }
+
+  public isReady(): Observable<boolean> {
+    return this._isReady.asObservable();
+  }
+
+  public setReady(): void {
+    this._isReady.next(true);
+    this._isReady.complete();
   }
 }
