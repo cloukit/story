@@ -4,6 +4,7 @@
  * https://github.com/cloukit/legal
  */
 import { Input, Component, OnInit } from '@angular/core';
+import 'rxjs/add/operator/take';
 import { CloukitStoryService } from './story.service';
 import * as Prism from 'prismjs';
 import 'prismjs/components/prism-css';
@@ -53,8 +54,8 @@ import 'prismjs/components/prism-typescript';
       </div>
     </cloukit-story-prism-css-wrapper>
     <div class="preview-box" *ngIf="_activeTab === 'preview'">
-      <ng-content></ng-content>  
-    </div>    
+      <ng-content></ng-content>
+    </div>
   </div>
 </div>
 `,
@@ -84,11 +85,11 @@ export class CloukitStoryComponent implements OnInit {
   constructor(private cloukitStoryService: CloukitStoryService) { }
 
   ngOnInit() {
-    this._componentSource = Prism.highlight(
-      this.cloukitStoryService.getSource(`${this.story}.ts`),
-      Prism.languages['typescript']);
-    this._componentTemplate = Prism.highlight(
-      this.cloukitStoryService.getSource(`${this.story}.html`),
-      Prism.languages['html']);
+    this.cloukitStoryService.getSource(`${this.story}.ts`).take(1).subscribe(source => {
+      this._componentSource = Prism.highlight(source, Prism.languages['typescript']);
+    })
+    this.cloukitStoryService.getSource(`${this.story}.html`).take(1).subscribe(source => {
+      this._componentTemplate = Prism.highlight(source, Prism.languages['html']);
+    })
   }
 }
