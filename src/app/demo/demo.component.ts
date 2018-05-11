@@ -1,9 +1,9 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { CloukitStoryService } from '../components/story.service';
-import { Subscription } from 'rxjs/Subscription';
+import { CloukitStoryService } from '../../../projects/cloukit/story/src/public_api';
+import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'demo',
+  selector: 'cloukit-demo',
   templateUrl: './demo.component.html',
   styles: [ ],
 })

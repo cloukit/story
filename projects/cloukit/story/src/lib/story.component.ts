@@ -4,7 +4,7 @@
  * https://github.com/cloukit/legal
  */
 import { Input, Component, OnInit } from '@angular/core';
-import 'rxjs/add/operator/take';
+import { take } from 'rxjs/operators';
 import { CloukitStoryService } from './story.service';
 import * as Prism from 'prismjs';
 import 'prismjs/components/prism-css';
@@ -85,11 +85,11 @@ export class CloukitStoryComponent implements OnInit {
   constructor(private cloukitStoryService: CloukitStoryService) { }
 
   ngOnInit() {
-    this.cloukitStoryService.getSource(`${this.story}.ts`).take(1).subscribe(source => {
+    this.cloukitStoryService.getSource(`${this.story}.ts`).pipe(take(1)).subscribe(source => {
       this._componentSource = Prism.highlight(source, Prism.languages['typescript']);
-    })
-    this.cloukitStoryService.getSource(`${this.story}.html`).take(1).subscribe(source => {
+    });
+    this.cloukitStoryService.getSource(`${this.story}.html`).pipe(take(1)).subscribe(source => {
       this._componentTemplate = Prism.highlight(source, Prism.languages['html']);
-    })
+    });
   }
 }
