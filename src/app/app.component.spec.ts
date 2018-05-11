@@ -1,11 +1,18 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { DemoModule } from './demo/demo.module';
+import { CloukitStoryModule } from '../../projects/cloukit/story/src/public_api';
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
       ],
+      imports: [
+        DemoModule,
+        CloukitStoryModule,
+      ]
     }).compileComponents();
   }));
   it('should create the app', async(() => {
