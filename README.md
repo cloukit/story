@@ -5,8 +5,11 @@
 
 &nbsp;
 
-internal tool
+internal tool to document components with stories.
 
+```
+yarn add @cloukit/story@6.0.0 @types/prismjs@1.9.0 prismjs@1.14.0
+```
 
 &nbsp;
 
