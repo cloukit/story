@@ -1,13 +1,13 @@
 {
   "name": "@cloukit/story",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "peerDependencies": {
-    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/http": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/platform-browser": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/platform-browser-dynamic": "^6.0.0-rc.0 || ^6.0.0",
-    "rxjs": "^6.1.0",
+    "@angular/common": "^7.0.0-rc.0 || ^7.0.0",
+    "@angular/core": "^7.0.0-rc.0 || ^7.0.0",
+    "@angular/http": "^7.0.0-rc.0 || ^7.0.0",
+    "@angular/platform-browser": "^7.0.0-rc.0 || ^7.0.0",
+    "@angular/platform-browser-dynamic": "^7.0.0-rc.0 || ^7.0.0",
+    "rxjs": "^6.3.3",
     "zone.js": "^0.8.26",
     "@types/prismjs": "^1.9.0",
     "prismjs": "^1.14.0"

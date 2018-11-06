@@ -5,7 +5,7 @@
  */
 import { Injectable } from '@angular/core';
 import { ReplaySubject, Observable, of } from 'rxjs';
-import { map, mergeMap, take } from 'rxjs/operators';
+import { mergeMap } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
