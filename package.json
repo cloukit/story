@@ -5,7 +5,7 @@
     "ng": "ng",
     "pre": "node cloukit-generate-story-source.js",
     "start": "yarn pre && ng serve",
-    "build": "yarn pre && ng build",
+    "build": "yarn pre && ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
